@@ -1,3 +1,7 @@
+#NUXT.js 로 제작한 정적페이지 입니다.
+- 개인적으로는 SSR이긴 하지만 속도만 보자면은 vue3 vite가 더 빠른듯...?
+
+
 # mbti-poket
 
 ## Build Setup
