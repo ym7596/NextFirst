@@ -38,6 +38,8 @@ export default {
 			  		mbti: `${result.e ? "e" : "i"}${result.s ? "s" : "n"}${result.f ? "f" : "t"}${result.p ? "p" : "i"}`
 		  			}
 		  		});
+				 // this.$router.go();
+
 			}
 		}
 	},

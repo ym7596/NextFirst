@@ -2,7 +2,9 @@
 	<div>
 	<v-card
     class="mx-auto"
-    max-width="344">
+    max-width="300"
+	max-height="400"
+	>
     <v-img
       :src= "data.imgsrc"
 	  alt = "Image"
@@ -10,7 +12,7 @@
     ></v-img>
 
     <v-card-title>
-      {{ data.Name_ko }}  ({{ data.Name }})
+     <span> {{ data.Name_ko }}  ({{ data.Name }})</span>
     </v-card-title>
 
     <v-card-subtitle>
@@ -39,6 +41,8 @@ export default {
 	}
 }
 </script>
-<style>
-
+<style scoped>
+ .span{
+	 font-size: 2vh;
+ }
 </style>

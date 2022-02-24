@@ -1,36 +1,21 @@
 <template>
 
-  <!-- <main v-if="page === 0">
+<div><Home /></div>
 
-	<img src="../static/titleimg.png" alt="포켓몬 그림">
-	<h1>나에게 맞는 포켓몬 MBTI</h1>
-	<h2>나와 가장 닮은 포켓몬은 누구일까요?</h2>
-	<Button text="테스트 시작!" :clickEvent="startTest" />
 
-  </main>
-  <main v-else-if="page < 5">
 
-    <Question />
-  </main>
 
-  <main v-else-if="page === 6">
 
-    <Result />
-  </main> -->
-  <div>
-	  <NavBar />
-	  <DexPage />
-  </div>
 </template>
 
 <script>
-import Button from "../components/Button.vue";
-import Question from "../components/Question.vue";
-import Result from "../pages/result/_mbti.vue";
-import DexPage from "./DexPage.vue";
-import NavBar from "../components/NavBar.vue";
+
+import Home from "../components/Home.vue";
+export default {
 
 
+	components: { Home}
+}
 /*
 메인 페이지 안에 들어갈것은?
 1. 인트로 페이지
@@ -38,22 +23,22 @@ import NavBar from "../components/NavBar.vue";
 3. 페이지 이동 /result/_mbti
 */
 
-export default {
+// export default {
 
-  computed: {
+//   computed: {
 
-    page() {
-        return this.$store.state.page;
-    },
+//     page() {
+//         return this.$store.state.page;
+//     },
 
-  },
+//   },
 
-	methods:{
+// 	methods:{
 
-		startTest() {
-		  this.$store.commit("SET_PAGE",1);
-		}
-	},
-    components: { Button, Question, Result, DexPage, NavBar }
-}
+// 		startTest() {
+// 		  this.$store.commit("SET_PAGE",1);
+// 		}
+// 	},
+//     components: { Button, Question, Result, DexPage, NavBar }
+// }
 </script>

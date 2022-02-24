@@ -1,11 +1,14 @@
 <template>
 
-    <div class = "row row-cols-1 row-cols-sm-3 g-2 m-0">
-      <div class="col" v-for="(data,index) in monlist" :key="index">
+    <v-container>
+		<v-row>
+      <v-col cols="6" v-for="(data,index) in monlist" :key="index">
 	    <PCard :data="data" />
-	  </div>
+	  </v-col>
 
-    </div>
+	  </v-row>
+	</v-container>
+
 </template>
 <script>
 import monlist from "../static/testdata.json"
