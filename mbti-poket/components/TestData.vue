@@ -1,41 +1,24 @@
 <template>
-    <div>
-      
-            <v-card
-    class="mx-auto"
-    max-width="344"
-    v-for="(item,index) in monlist" :key = "index"
-  >
-    <v-img
-      src= {{ item.imgsrc }}
-      height="200px"
-    ></v-img>
 
-    <v-card-title>
-      Top western road trips
-    </v-card-title>
+    <div class = "row row-cols-1 row-cols-sm-3 g-2 m-0">
+      <div class="col" v-for="(data,index) in monlist" :key="index">
+	    <PCard :data="data" />
+	  </div>
 
-    <v-card-subtitle>
-      1,000 miles of wonder
-    </v-card-subtitle>
-
-    
-  </v-card>
-        
     </div>
 </template>
 <script>
 import monlist from "../static/testdata.json"
+import PCard from "./PCard.vue"
 export default {
-    
     data() {
-        return{
-        monlist:monlist
-    }
+        return {
+            monlist: monlist
+        };
     },
-   
+    components: { PCard }
 }
 </script>
 <style>
-    
+
 </style>
