@@ -17,6 +17,7 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.3",
     "sass": "^1.49.8",
     "sass-loader": "^10.2.1"
   }

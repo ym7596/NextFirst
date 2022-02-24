@@ -1,5 +1,9 @@
+
+
 export const state = {
 //상태
+  
+
   page: 0,
   quest: [
 	    {
@@ -69,6 +73,7 @@ export const state = {
 }
 
 export const mutations = {
+ 
 //commit, state 변경
 //질문 응답시 값들 저장
   SET_USER_TYPE(state, type) {
@@ -103,4 +108,6 @@ export const actions ={
   clickResetButton ({ commit }) {
     commit("PAGE_RESET")
   }
+  
+  
 }
